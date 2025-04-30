@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@angular/cdk": "^19.2.11",
+    "@angular/material": "^19.2.11"
+  },
+  "devDependencies": {
+    "@angular/cli": "^19.2.9"
+  }
+}
