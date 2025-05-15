@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import it from '@angular/common/locales/it';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -14,16 +15,24 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'Angular' title`, () => {
+  it(`should have the 'FESTIVOS' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Angular');
+    expect(app.title).toEqual('CampeonatosFIFA');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Angular');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Festivos');
   });
 });
+function beforeEach(arg0: () => Promise<void>) {
+  throw new Error('Function not implemented.');
+}
+
+function expect(app: AppComponent) {
+  throw new Error('Function not implemented.');
+}
+
