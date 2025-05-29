@@ -2,12 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { Observable } from 'rxjs';
-import { Campeonato } from '../../shared/entidades/festivos';
+import { festivo } from '../../shared/entidades/festivos';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CampeonatoService {
+export class festivoService {
 
  
   private url: string;
@@ -27,8 +27,8 @@ export class CampeonatoService {
     return this.http.post<Festivo>(`${this.url}agregar`, Festivo);
   }
 
-  public modificar(Festivo: Campeonato): Observable<Festivo> {
-    return this.http.put<Campeonato>(`${this.url}modificar`, Festivo);
+  public modificar(Festivo: festivo): Observable<Festivo> {
+    return this.http.put<festivo>(`${this.url}modificar`, Festivo);
   }
 
   public eliminar(id:number): Observable<boolean> {
