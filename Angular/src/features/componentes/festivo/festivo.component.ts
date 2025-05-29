@@ -26,7 +26,7 @@ export class festivoComponent implements OnInit {
   public readonly TAMANO: number = 10;
 
   public opcionBusqueda: number = -1;
-  public opcionesBusqueda: string[] = ["Nombre", "Año", "País Organizador"];
+  public opcionesBusqueda: string[] = ["Nombre", "Año"];
   public textoBusqueda: string = "";
 
   public selecciones: Seleccion[] = [];
@@ -34,7 +34,6 @@ export class festivoComponent implements OnInit {
   public columnas = [
     { name: "Nombre", prop: "nombre" },
     { name: "Año", prop: "año" },
-    { name: "País Organizador", prop: "paisOrganizador.nombre" }
   ];
   public modoColumna = ColumnMode;
   public tipoSeleccion = SelectionType;
